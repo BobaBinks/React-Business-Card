@@ -2,6 +2,10 @@
     --background: #1A1B21;
 }
 
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
 html, body{
     margin: 0;
     font-family: Inter, sans-serif;
@@ -12,12 +16,19 @@ body{
     color: white;
 }
 
+.container{
+    padding: 0 2.25em;
+}
+
 a{
     cursor: pointer;
 }
 
+/*------------------- Info Section -------------------*/
+
 .info-section{
     text-align: center;
+    margin-bottom: 1em;
 }
 
 .portrait{
@@ -28,13 +39,78 @@ a{
     aspect-ratio: 1;
 }
 
+.info-text{
+    margin: 1em 0;
+}
 
 .info-text > p{
     margin: 0 0 0.25em 0;
 }
 
-.name{
+h1, h2{
+    margin: 0;
     margin-bottom: 0.25em;
+}
+
+p{
+    margin: 0 0 0.5em 0;
+}
+
+.role{
+    color: #F3BF99;
+}
+
+.info-links{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.info-links a{
+    margin: 0 1em 0 0;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    width: 150px;
+    background-color: purple;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+
+.link-icons{
+    font-size: 1.2rem;
+    margin-right: 0.2em;
+}
+
+.info-links #email{
+    background-color: white;
+    color: #1E1F26;
+}
+
+.info-links #linkedin{
+    background-color: #5093E2;
+    color: white;
+}
+
+.info-links #linkedin, .info-links #email{
+    display: inline-block;
+    transform: scale(1);
+    transition: transform 0.3s ease;
+}
+
+.info-links #email:hover, 
+.info-links #email:focus,
+.info-links #linkedin:hover, 
+.info-links #linkedin:focus
+{
+    transform: scale(1.1);
+    filter: brightness(0.85);
+}
+
+
+/*------------------- About Section -------------------*/
+#about-section{
+    margin: 2em 0;
 }
 
 /*------------------- Typography -------------------*/

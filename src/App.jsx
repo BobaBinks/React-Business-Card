@@ -1,6 +1,7 @@
 import Info from "../components/Info"
 import About from "../components/About"
 import Interest from "../components/Interest"
+import FooterComponent from "../components/FooterComponent"
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { library } from '@fortawesome/fontawesome-svg-core'
@@ -20,7 +21,7 @@ function App() {
       <Info />
       <About />
       <Interest />
-      <h1>Hi</h1>
+      <FooterComponent />
     </>
   )
 }

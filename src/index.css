@@ -22,6 +22,7 @@ body{
 
 a{
     cursor: pointer;
+    text-decoration: none;
 }
 
 /*------------------- Info Section -------------------*/
@@ -71,8 +72,6 @@ p{
     padding-top: 1em;
     padding-bottom: 1em;
     width: 150px;
-    background-color: purple;
-    text-decoration: none;
     border-radius: 6px;
 }
 
@@ -112,6 +111,45 @@ p{
 #about-section{
     margin: 2em 0;
 }
+
+/*------------------- About Section -------------------*/
+
+#interest-section{
+    margin-bottom: 2em;
+}
+
+
+/*------------------- Footer Section -------------------*/
+footer.container{
+    padding: 2em;
+    background-color: #161619;
+}
+
+footer > ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    gap: 1.5em;
+}
+
+.footer-list li{
+    font-size: 2rem;
+    background-color: #918E9B;
+    border-radius: 5px;
+    color: #161619;
+}
+
+.footer-list li:hover,
+.footer-list li:focus{
+    filter: brightness(0.85);
+}
+
+.footer-list li a:visited{
+    color: #161619;
+}
+
 
 /*------------------- Typography -------------------*/
 

@@ -18,8 +18,8 @@ function App() {
   return (
     <>
       <Info />
-      {/* <About />
-      <Interest /> */}
+      <About />
+      <Interest />
       <h1>Hi</h1>
     </>
   )
